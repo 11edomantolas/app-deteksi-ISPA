@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Quattrocento:wght@400;700&family=Quicksand:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Bakteri Ispa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: "poppins";
+        }
+        .text-blue{
+            background-color: #006CB1;
+        }
+    </style>
+</head>
+<body>
+        <div class="flex justify-center my-10 items-center space-x-10 border-b border-gray-900 pb-10">
+            <img width="150" src="public/POLIJE TRANSPARAN.png" alt="logo">
+            <div class="flex flex-col justify-between">
+                <h1 class="font-bold text-xl max-w-xl mb-5">DETEKSI DINI PENYAKIT ISPA MELALUI CITRA BAKTERI PADA SPUTUM DAHAK</h1>
+                <p class="font-semibold">
+                    Kelompok 3 - Golongan E
+                </p>
+            </div>
+        </div>
+        <form method="post" class=" space-y-10 flex flex-col justify-center py-10">
+            <h1 class="text-center text-3xl font-bold">Masukan Gambar Bakteri</h1>
+            <div class="flex justify-center">
+                <input type="file" class="border p-2 mr-2 rounded">
+                <button class="text-blue rounded text-white w-32 p-2 font-semibold ">Kirim</button>
+            </div>
+        </form>  
+        <div class="flex justify-center py-5 space-x-10">
+            <div class="text-center flex flex-col items-center">
+                <h1 class="text-md mb-5 font-semibold">Bakteri Streptococcus pneumoniae</h1>
+                <img width="250" src="public/sp_1.jpg" alt="Bakteri">
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <h1 class="text-md mb-5 font-semibold">Hasil Prediksi</h1>
+                <img width="250" src="public/sp_1.jpg" alt="Bakteri">
+            </div>
+        </div>  
+        <div class="flex flex-col justify-center items-center py-10 space-y-5">
+            <h1>Dengan Menggunakan Model CNN Gambar Tersebut Terindentifikasi Sebagai :</h1>
+            <p class="font-semibold text-xl">Bakteri Streptococcus pneumoniae</p>
+        </div>
+    
+</body>
+</html>
